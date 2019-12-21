@@ -1,0 +1,401 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<script src="slider.js"></script>
+	<link rel="stylesheet" href="stil.css">
+	<style>
+		body {
+			background: #202020;
+		}
+		.haber li {
+			font-weight: bold;
+			margin-right: -10%;
+			font-size: 90%;
+			float: left;
+			margin-left: 10%;
+			margin-top: 0.4%;
+		}
+		.haber li a:hover:not(.active) {
+			text-decoration: none;
+			background-color: #9c9c9c;
+		}
+		.haber li a {
+			color: #00BFFF;
+			display: block;
+			padding: 10px 14px;
+		}
+		.haber a:link {
+			text-decoration: none;
+		}
+		.haber ul {
+			font-family: arial;
+			padding-top: 1%;
+			list-style-type: none;
+			margin: 1.5%;
+			padding-left: 23%;
+		}
+		.haber h1 {
+			text-align: center;
+			color: #90A4AE;
+		}
+		.haber p {
+			color: white;
+			font-size: 12px;
+		}
+		.haber p2 {
+			position: absolute;
+			color: white;
+			left: 15px;
+			top: 45px;
+			font-size: 12px;
+		}
+		.haber p3 {
+			color: white;
+			font-size: 15px;
+			margin-left: 200px;
+		}
+		input {
+			margin-top: -10%;
+		}
+		.haber h4 {
+		color: White;
+		}
+		.fa-facebook-square,
+		.fa-twitter-square,
+		.fa-linkedin-square,
+		.fa.fa-github-square {
+			color: blue;
+			font-size: 180%;
+		}
+		.haberler {
+			width: 80%;
+			margin: 5% auto;
+		}
+		.haber {
+			text-align: center;
+			width: 25%;
+			float: left;
+			color: white;
+			padding-bottom: 10%;
+		}
+		@media only screen and (max-width: 600px) {
+			.haber {
+			text-align: center;
+			width: 100%;
+			float: left;
+			color: white;
+			padding-bottom: 10%;}
+		}
+		.haber h3 {
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		}
+		.resim {
+			height: 160px;
+			width: 90%;
+			margin: auto;
+		}
+		.resim img {
+			width: 100%;
+		}
+		.haberler a {
+			color: white;
+			text-decoration: none;
+		}
+		.haberler h2 {
+			color: white;
+			border-bottom: 2px solid white;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		}
+		.baslik h2 {
+			color: white;
+			border-bottom: 2x solid white;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			padding-right: 50%;
+		}
+.slider-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-top:11%;
+  padding-left:13%;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+	</style>
+	<title>Kişisel Web Sayfası</title>
+</head>
+
+<body>
+	<header>
+		<div class="header">
+			<img src="logo.png"><a href="#default" class="logo"> </a>
+			 <div class="header-right">
+			   <ul>
+			   <li>  
+				 <a class="active" href="index.html">Anasayfa</a>
+				 <ul>
+				   <li><a href="index.html">Link 1</a></li>
+				   <li><a href="index.html">Link 2</a></li>
+				   <li><a href="index.html">Link 3</a></li>
+				 </ul>
+			   </li> 
+			   </ul>
+			   <ul>
+				 <li> 
+			   <a href="hakkimda.html">Hakkımda</a>
+			 <ul>
+				   <li><a href="hakkimda.html">Link 1</a></li>
+				   <li><a href="hakkimda.html">Link 2</a></li>
+				   <li><a href="hakkimda.html">Link 3</a></li>
+				 </ul>
+				 </li> 
+			   </ul>
+		   
+				 <ul>
+				   <li> 
+			   <a href="yazilar.html">Yazılarım</a>
+			   <ul>
+				   <li><a href="yazilar.html">Link 1</a></li>
+				   <li><a href="yazilar.html">Link 2</a></li>
+				   <li><a href="yazilar.html">Link 3</a></li>
+				 </ul>
+				   </li> 
+				 </ul>
+				 <ul>
+				   <li> 
+			   <a href="iletisim.html">İletişim</a>
+				   </li> 
+				 </ul>
+			 </div>
+		   </div>
+		   
+	</header>
+
+
+	<div class="slider-container">
+
+		<div class="mySlides fade">
+		<img src="pictures/picture.jpg" style="width:80%;">
+		</div>
+		
+		<div class="mySlides fade"> 
+		<img src="pictures/picture2.jpeg"	 style="width:80%; height:10%;">
+		</div>
+		
+		<div class="mySlides fade">
+		<img src="pictures/picture3.jpg" style="width:80%", style="height:10%;">
+		</div>
+		
+		</div>
+		<br>
+		
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		</div>
+
+
+	<div class="haberler">
+		<div>
+			<h2>Haberler</h2>
+		</div>
+		<div class="haber">
+			<div class="resim">
+				<img src="./pictures/netflix.jpg" alt="" class="resim">
+			</div>
+			<h3> <a target="_blank"
+					href="https://shiftdelete.net/netflix-yeni-ozellikleriyle-kullanicilari-sevindirecek">
+					Netflix yeni özellikleriyle kullanıcıları sevindirecek
+				</a>
+			</h3>
+		</div>
+		<div class="haber">
+			<div class="resim">
+				<img src="./pictures/ucanaraba.jpg" alt="" class="resim">
+			</div>
+			<h3> <a target="_blank" href="https://shiftdelete.net/hiz-s	inirlarini-zorlayan-ucan-araba-sergilendi">
+					Hız sınırlarını zorlayan uçan araba sergilendi
+				</a>
+			</h3>
+
+		</div>
+		<div class="haber">
+			<div class="resim">
+				<img src="./pictures/otonomarac2.jpeg" alt="" class="resim">
+			</div>
+			<h3>
+				<a target="_blank" href="https://shiftdelete.net/hiz-sinirlarini-zorlayan-ucan-araba-sergilendi">
+					Otonom sürüş teknolojilerine odaklanan May Mobility, 50 milyon dolar yatırım aldı</h3>
+		</div>
+		<div class="haber">
+			<div class="resim">
+				<img src="./pictures/cip.jpg" alt="" class="resim">
+			</div>
+			<h3><a target="_blank"
+					href="http://www.haber7.com/teknoloji/haber/2921967-insan-bedenini-onaran-cip-buyuk-umut">
+					İnsan bedenini onaran 'çip': Büyük umut!</h3>
+		</div>
+	</div>
+
+	<div class="haberler">
+		<div class="baslik">
+			<h2>Duyurular</h2>
+		</div>
+		<div class="haber">
+			<div class="resim">
+				<img src="./pictures/cisco.jpg" alt="" class="resim">
+			</div>
+			<h3> <a target="_blank"
+					href="http://www.hurriyet.com.tr/teknoloji/ciscodan-yapay-zeka-ve-makine-ogrenimi-temelli-inovasyon-41255279">
+					Cisco’dan yapay zeka ve makine öğrenimi temelli inovasyon
+				</a>
+			</h3>
+		</div>
+		<div class="haber">
+			<div class="resim">
+				<img src="./pictures/veam.jpg" alt="" class="resim">
+			</div>
+			<h3> <a target="_blank"
+					href="http://www.hurriyet.com.tr/teknoloji/veeam-2020-teknoloji-ongoruleri-41390407">
+					Veeam 2020 Teknoloji Öngörüleri
+				</a>
+			</h3>
+
+		</div>
+		<div class="haber">
+			<div class="resim">
+				<img src="./pictures/teknoloji.jpg" alt="" class="resim">
+			</div>
+			<h3>
+				<a target="_blank"
+					href="http://www.hurriyet.com.tr/teknoloji/teknoloji-alaninda-2019dan-2020ye-neler-bekliyoruz-41389081">
+					Teknoloji alanında 2019’dan 2020’ye neler bekliyoruz?</h3>
+		</div>
+		<div class="haber">
+			<div class="resim">
+				<img src="./pictures/5g.jpg" alt="" class="resim">
+			</div>
+			<h3><a target="_blank"
+					href="http://bigpara.hurriyet.com.tr/haberler/teknoloji-haberleri/5g-kullanici-sayisi-26-milyara-ulasacak_ID1458873/">
+					5G kullanıcı sayısı 2.6 milyara ulaşacak</h3>
+		</div>
+	</div>
+
+	<script>
+		var slideIndex = 0;
+		showSlides();
+		
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+		</script>
+<div id="footer2">
+
+
+<footer class="footer-distributed">
+ 	<div class="footer-left">
+	<img src="logo.png">
+  
+	  <p class="footer-links">
+		<a href="index.html">Anasayfa</a>
+		|
+		<a href="hakkimda.html">Hakkımda</a>
+		|
+		<a href="yazilar.html">Yazılar</a>
+		|
+		<a href="iletisim.html">İletişim</a>
+	  </p>
+  	  <p class="footer-company-name">© 2019 Copyright Furkan Cinar.</p>
+	</div>
+  
+	<div class="footer-center">
+	  <div>
+		<i class="fa fa-map-marker"></i>
+		  <p><span>Düğmeciler Mahallesi,
+		   Özkan Sokak</span>
+		  Eyüp Sultan/İstanbul - 34055</p>
+	  </div>
+  
+	  <div>
+		<i class="fa fa-phone"></i>
+		<p>+90 537 989 9012</p>
+	  </div>
+	  <div>
+		<i class="fa fa-envelope"></i>
+		<p><a href="mailto:support@eduonix.com">furkancinar34@hotmail.com</a></p>
+	  </div>
+	</div>
+	<div class="footer-right">
+	  <p class="footer-company-about"> </p>
+		<p>Gelişmelerden haberdar olmak için!</p>
+		<input type="text" placeholder="Mail adresinizi yazın.."> <br>
+		<button type="submit"> Gönder</button>
+	  
+		
+  
+	    <div class="footer-icons">
+		<a href="#"><i class="fa fa-facebook-square"></i></a>
+		<a href="#"><i class="fa fa-twitter-square"></i></a>
+		<a href="#"><i class="fa fa-linkedin-square"></i></a>
+		<a href="#"><i class="fa fa-github-square"></i></a>
+	  </div>
+	</div>
+  
+  </footer>
+
+</div>
+
+
+
+
+
+</body>
+
+</html>
