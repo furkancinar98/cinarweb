@@ -1,0 +1,21 @@
+Options -indexes
+RewriteEngine On
+RewriteBase /odev/
+RewriteRule ^kurumsal/(.*)$ index.php?sayfa=kurumsal&seflink=$1 [NC]
+RewriteRule ^makale/(.*)$ index.php?sayfa=makale&seflink=$1 [NC]
+RewriteRule ^giris-yap$ index.php?sayfa=login [NC]
+RewriteRule ^sifremi-unuttum$ index.php?sayfa=sifremi-unuttum [NC]
+RewriteRule ^hesabim$ index.php?sayfa=hesabim [NC]
+RewriteRule ^cikis$ index.php?sayfa=cikis [NC]
+RewriteRule ^duyurular$ index.php?sayfa=duyurular [NC]
+RewriteRule ^haberler$ index.php?sayfa=haberler [NC]
+
+RewriteRule ^haber-detay/(.*)$ index.php?sayfa=haber-detay&seflink=$1 [NC]
+RewriteRule ^duyuru-detay/(.*)$ index.php?sayfa=duyuru-detay&seflink=$1 [NC]
+
+RewriteRule ^blog$ index.php?sayfa=blog [NC]
+RewriteRule ^iletisim$ index.php?sayfa=iletisim [NC]
+RewriteRule ^hizmet-detay/(.*)$ index.php?sayfa=hizmet-detay&seflink=$1 [NC]
+RewriteRule ^proje-detay/(.*)$ index.php?sayfa=proje-detay&seflink=$1 [NC]
+RewriteRule ^blog-detay/(.*)$ index.php?sayfa=blog-detay&seflink=$1 [NC]
+RewriteRule ^arama$ index.php?sayfa=arama [QSA]
